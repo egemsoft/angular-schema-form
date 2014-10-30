@@ -1,4 +1,4 @@
-Angular Schema Form
+Esef Angular Schema Form
 ===================
 
 [![Build Status](https://travis-ci.org/Textalk/angular-schema-form.svg?branch=master)](https://travis-ci.org/Textalk/angular-schema-form)
@@ -82,7 +82,7 @@ Installation
 It's simplest to install Schema Form using [Bower](http://bower.io/).
 
 ```bash
-bower install angular-schema-form
+bower install esef-angular-schema-form
 ```
 
 This will install the latest release and basic dependencies. See
