@@ -25,17 +25,14 @@ Documentation
     1. [array](#array)
     1. [tabarray](#tabarray)
 1. [Post process function](#post-process-function)
-1. [Extending Schema Form](extending.md)
 
 Basic Usage
 -----------
 
 First, expose your schema, form, and model to the $scope.
-Don't forget to load the ``schemaForm` module.
 
 ```javascript
-angular.module('myModule', ['schemaForm'])
-       .controller('FormController', function($scope) {
+function FormController($scope) {
   $scope.schema = {
     type: "object",
     properties: {
@@ -187,7 +184,6 @@ Schema Form currently supports the following form field types out of the box:
 | text          |  input with type text   |
 | textarea      |  a textarea             |
 | number        |  input type number      |
-| password      |  input type password    |
 | checkbox      |  a checkbox             |
 | checkboxes    |  list of checkboxes     |
 | select        |  a select (single value)|
@@ -311,10 +307,7 @@ General options most field types can handle:
   validationMessage: "Oh noes, please write a proper address",  // A custom validation error message
   onChange: "valueChanged(form.key,modelValue)", // onChange event handler, expression or function
   feedback: false,             // Inline feedback icons
-  placeholder: "Input...",     // placeholder on inputs and textarea
-  ngModelOptions: { ... },     // Passed along to ng-model-options
-  readonly: true               // Same effect as readOnly in schema. Put on a fieldset or array
-                               // and their items will inherit it.
+  ngModelOptions: { ... }      // Passed along to ng-model-options
 }
 ```
 

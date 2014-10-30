@@ -10,7 +10,7 @@
           ng-class="{active: selected.tab === $index}">
           <a href="#">{{evalExpr(form.title,{'$index':$index, value: item}) || $index}}</a>
       </li>
-      <li ng-hide="form.readonly" ng-click="$event.preventDefault() || (selected.tab = appendToArray().length - 1)">
+      <li ng-click="$event.preventDefault() || (selected.tab = appendToArray().length - 1)">
         <a href="#">
           <i class="glyphicon glyphicon-plus"></i>
           {{ form.add || 'Add'}}
@@ -28,8 +28,7 @@
            <sf-decorator form="copyWithIndex($index)"></sf-decorator>
 
 
-           <button ng-hide="form.readonly"
-                   ng-click="selected.tab = deleteFromArray($index).length - 1"
+           <button ng-click="selected.tab = deleteFromArray($index).length - 1"
                    type="button"
                    class="btn {{ form.style.remove || 'btn-default' }} pull-right">
              <i class="glyphicon glyphicon-trash"></i>
@@ -47,7 +46,7 @@
           ng-class="{active: selected.tab === $index}">
           <a href="#">{{evalExpr(form.title,{'$index':$index, value: item}) || $index}}</a>
       </li>
-      <li ng-hide="form.readonly" ng-click="$event.preventDefault() || appendToArray()">
+      <li ng-click="$event.preventDefault() || appendToArray()">
         <a href="#">
           <i class="glyphicon glyphicon-plus"></i>
           {{ form.add || 'Add'}}
