@@ -1,5 +1,5 @@
 angular.module('schemaForm').config(['schemaFormDecoratorsProvider', function(decoratorsProvider) {
-  var base = '/static/bower_components/angular-schema-form/src/directives/decorators/bootstrap/';
+  var base = '/static/bower_components/esef-angular-schema-form/src/directives/decorators/bootstrap/';
 
   decoratorsProvider.createDecorator('bootstrapDecorator', {
     textarea: base + 'textarea.html',
