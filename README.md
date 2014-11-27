@@ -1,4 +1,4 @@
-Esef Angular Schema Form
+Angular Schema Form
 ===================
 
 [![Build Status](https://travis-ci.org/Textalk/angular-schema-form.svg?branch=master)](https://travis-ci.org/Textalk/angular-schema-form)
