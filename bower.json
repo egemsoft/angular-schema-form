@@ -31,16 +31,16 @@
 		"coverage"
 	],
 	"dependencies": {
-		"angular": ">= 1.2",
+		"angular": "~1.2.25",
 		"tv4": "~1.0.15",
-		"angular-sanitize": ">= 1.2",
+		"angular-sanitize": "~1.2.25",
 		"objectpath": "~1.0.4"
 	},
 	"devDependencies": {
 		"angular-ui-ace": "bower",
 		"angular-schema-form-datepicker": ">= 0.1.0",
 		"jquery": "~2.1.1",
-		"angular-mocks": ">= 1.2",
+		"angular-mocks": "~1.2.25",
 		"angular-schema-form-colorpicker": "~0.1.0"
 	}
 }
